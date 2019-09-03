@@ -9,3 +9,9 @@ flavors:
     serialization_format: cloudpickle
     sklearn_version: 0.20.1
 utc_time_created: '2019-09-03 14:27:21.330312'
+entry_points:
+  main:
+    parameters:
+      alpha: float
+      l1_ratio: {type: float, default: 0.1}
+    command: "python wine_quality.py {alpha} {l1_ratio}"
