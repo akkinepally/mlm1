@@ -4,4 +4,6 @@ conda_env: conda.yaml
 
 entry_points:
   main:
-    command: "python wine_quality.py"
+   parameters:
+      data_file: wine-quality.csv
+    command: "python wine_quality.py -r {data_file}"
